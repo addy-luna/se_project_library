@@ -22,19 +22,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a href="#staff" class="nav__link">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a href="#events" class="nav__link">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a href="#membership" class="nav__link">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a href="#footer" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
         />
 
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a href="#about" class="header__link">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -59,7 +59,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section id="events" class="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -101,7 +101,7 @@
               <img
                 src="./images/person_feynman.png"
                 alt="Joan Feynman"
-                class="person__image person__image_size_1"
+                class="person__image person__image_size_l"
               />
             </div>
             <div class="person person_name_burbidge">
@@ -113,33 +113,33 @@
               />
             </div>
             <div class="person person_name_cannon">
-              <p class="person__caption">Annie Jump Cannon</p>
               <img
                 src="./images/person_cannon.png"
                 alt="Cannon"
                 class="person__image person__image_size_m"
               />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
             <div class="person person_name_mitchell">
-              <p class="person__caption">Maria Mitchell</p>
               <img
                 src="./images/person_mitchell.png"
                 alt="Cannon"
                 class="person__image person__image_size_s"
               />
+              <p class="person__caption">Maria Mitchell</p>
             </div>
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
                 src="./images/person_tarter.png"
                 alt="Cannon"
-                class="person__image person__image_size_s"
+                class="person__image person__image_size_m"
               />
             </div>
           </div>
         </section>
 
-        <section class="staff">
+        <section id="staff" class="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
@@ -213,7 +213,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section id="membership" class="membership">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -269,7 +269,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -294,7 +294,7 @@
         </section>
       </main>
       <footer id="footer" class="footer">
-        <section class="footer__columns">
+        <div class="footer__columns">
           <div class="footer__column">
             <img
               src="./images/logo_white.png"
@@ -334,7 +334,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <p class="footer__copyright">© 2023 Adela Tatum</p>
       </footer>
     </div>
